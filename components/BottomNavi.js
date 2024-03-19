@@ -3,6 +3,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { StyleSheet, Text, View } from 'react-native';
+import Search from './Search';
 
 
 const Tab = createBottomTabNavigator();
@@ -52,7 +53,7 @@ const Screen1 = () => (
           })}
           
         >
-          <Tab.Screen name="Screen1" component={Screen1} />
+          <Tab.Screen name="Search" component={Search} />
           <Tab.Screen name="Screen2" component={Screen2} />
         </Tab.Navigator>
       </NavigationContainer>
